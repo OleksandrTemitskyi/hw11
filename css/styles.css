@@ -1,0 +1,170 @@
+@import url("reset.css");
+
+@font-face {
+    font-family: 'Architects Daughter';
+    src: url('../fonts/ArchitectsDaughter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+/* GLOBAL */
+.header {
+    background: #81a368;
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+
+.level {
+    text-align: center;
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+
+}
+
+.level > li {
+    position: relative;
+}
+
+.level > li:hover .second-level {
+    display: block;
+}
+
+.level li a {
+    display: block;
+    text-decoration: none;
+    font-weight: 800;
+    color: #fff;
+    padding: 10px 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+
+}
+
+.second-level {
+    padding-top: 30px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.second-level li {
+    background: brown;
+    color: azure;
+    font-family: 'Architects Daughter';
+}
+
+li {
+    position: relative;
+}
+
+
+.three-level li a {
+    padding: 10px 80px;
+    background: blue;
+    font-family: 'Roboto';
+    color: yellow;
+}
+
+.three-level {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    display: none;
+}
+
+.second-level > li:hover .three-level {
+    display: block;
+}
+
+.home {
+    display: block;
+    padding-left: 50px;
+    padding-right: 25px;
+    background: #000 url('../images/home.svg') no-repeat 10px 10px/auto 30px;
+}   
+
+.gallery {
+    background: #000 url('../images/gallery.svg') no-repeat 10px 12px/auto 30px;
+}
+
+.arrow-down {
+    background: #000 url('../images/arrow-down.svg') no-repeat 250px 14px/auto 30px;
+}
+
+.arrow-left {
+    background: url('../images/arrow-left.svg') no-repeat 10px 14px;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 500px ;
+    background-color: #81a368;
+}
+
+.messenger {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: yellow;
+}
+
+.telegram, .instagram, .facebook, .github {
+    display: inline-block;
+	padding: 27px;
+    margin: 50px 0;
+}
+
+.telegram {
+    background: #1c08f6 url('../images/telegram.svg') no-repeat center/40px;
+}
+
+.instagram {
+    background: #1c08f6 url('../images/instagram.svg') no-repeat center/40px;
+}
+
+.facebook {
+    background: #1c08f6 url('../images/facebook.svg') no-repeat center/40px;
+}
+
+.github {
+    background: #1c08f6 url('../images/github.svg') no-repeat center/40px;
+}
+
